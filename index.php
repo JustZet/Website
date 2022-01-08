@@ -32,11 +32,11 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $type = $_FILES['fileToUpload']['type'];
 //Check if the database is compatible.
-require('connect.php');
+require('db/connect.php');
 
 // check type of file.
 if($imageFileType != "img" && $imageFileType != "jpeg" && $imageFileType != "jpg" && $imageFileType != "gif" && $imageFileType != "png") {
-  echo 'Sorry but is accepted only img / jpg / jpeg / gif... <br>
+  echo 'Sorry but is accepted only img / jpg / jpeg / gif / png... <br>
   Please go back to log in page and load one accepted type of image. :) <br>';
   echo '<a href="index.html" id="goBack">Go back!</a>';
   die();
@@ -47,20 +47,35 @@ else {
     $_SESSION['fullName'] = $firstname.' '.$lastname;
     $_SESSION['adress'] = $Adress;
     $_SESSION['mobile'] = $Phone;
-
-  if(isset($_SESSION['fullName'])) {
-    echo 'Welcome back '.$_SESSION['fullName'], '!!!<br>';
-  }
     // Insert image in folder...
   if(isset($_POST["submit"])) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-      echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded. <br>";
-
+      
     // database insert sql
   $sql = "INSERT INTO website (FirstName, LastName, Adress, PhoneNumber, Password, FileName) VALUES ('$firstname', '$lastname', '$Adress', '$Phone', '$Password', '$Img');";
   if ($con->query($sql) === TRUE) {
-      echo "New record created successfully! <br>";
-      echo '<a href="about.php" id="goAbout">Go about!</a>';
+        // Get data from website ...
+        $sql = "SELECT * FROM website ORDER BY id DESC LIMIT 1;";
+        $query = mysqli_query($con, $sql);
+        $numrows = mysqli_num_rows($query);
+        if ($numrows > 0) {
+          echo '<b> First Name: </b>';
+          while ($a = mysqli_fetch_assoc($query)) {
+            echo $a['FirstName'].'<br>';
+            echo '<b> Last Name: </b>';
+            echo $a['LastName'].'<br>';
+            echo '<b> Adress: </b>';
+            echo $a['Adress'].'<br>';
+            echo '<b> Phone number: </b>';
+            echo $a['PhoneNumber'].'<br>';
+            echo '<b> File name:: </b>';
+            echo $a['FileName'].'<br>';
+          }
+        } else {
+          echo '0 Results.';
+        }
+
+      echo '<a href="about.php" id="goAbout">Go about!</a> <br>';
   } else {
       echo "Error: ".$sql.'<br>'.$con->error;
     }

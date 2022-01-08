@@ -117,3 +117,6 @@ input[type=submit] {
 input[type=submit]:hover {
     border-color: rgb(24, 236, 215);
 }
+table, tr, td {
+    border: solid rgb(0, 0, 0) 1px;
+}

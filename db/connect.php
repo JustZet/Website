@@ -2,5 +2,5 @@
 if ($con = mysqli_connect("localhost","root","","index")) {
 
 } else {
-    echo 'Error with database connection!';
+    echo mysqli_connect_error();
 }
