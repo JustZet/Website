@@ -14,7 +14,7 @@
   <ul>
     <li><a href="#home">HOME</a></li>
     <li><a href="./index.html">LOG IN</a></li>
-    <li><a href="./about.php">ABOUT</a></li>
+    <li><a href="./sessions.php">SESSIONS</a></li>
   </ul>
 </div>
 <div id="container-php">
