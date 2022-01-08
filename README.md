@@ -1,2 +1,4 @@
-Hello! This is my first website connected with database via php
-<h1>Test :)</h1>
+<h1>Welcome!</h1>
+Hello! This is my first website! I used HTML, CSS, MySql and php for this.
+Is connected with a database named "Index", have one table named "website".
+
