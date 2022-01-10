@@ -8,16 +8,22 @@
   <link rel="stylesheet" href="css/index.css" type="text/css">
   <link rel="stylesheet" media="screen and (max-width: 1050px)" href="css/widerscreen.css">
   <link rel="stylesheet" media="screen and (max-width: 650px)" href="css/smallerscreen.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
 <div id="sources">
   <ul>
-    <li><a href="#home">HOME</a></li>
-    <li><a href="./index.html">LOG IN</a></li>
-    <li><a href="./sessions.php">SESSIONS</a></li>
+    <b>
+      <li><a href="#home"><span class="material-icons">
+        home
+        </span></a></li>
+      <li class="active"><a href="./index.html">LOG IN</a></li>
+      <li><a href="sessions.php">SESSIONS</a></li>
+    </b>
   </ul>
 </div>
-<div id="container-php">
+<div class="container info">
 <?php
 // post records
 $firstname = $_POST['firstName'];
@@ -75,7 +81,7 @@ else {
           echo '0 Results.';
         }
 
-      echo '<a href="about.php" id="goAbout">Go about!</a> <br>';
+      echo '<a href="sessions.php" id="goAbout">Go about!</a> <br>';
   } else {
       echo "Error: ".$sql.'<br>'.$con->error;
     }

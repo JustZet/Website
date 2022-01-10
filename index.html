@@ -8,51 +8,59 @@
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" media="screen and (max-width: 1050px)" href="css/widerscreen.css">
     <link rel="stylesheet" media="screen and (max-width: 650px)" href="css/smallerscreen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
 
 <div id="sources">
   <ul>
-    <li><a href="#home">HOME</a></li>
-    <li class="active"><a href="./index.html">LOG IN</a></li>
-    <li><a href="./sessions.php">SESSIONS</a></li>
+    <b>
+      <li><a href="#home"><span class="material-icons">
+        home
+        </span></a></li>
+      <li class="active"><a href="./index.html">LOG IN</a></li>
+      <li><a href="sessions.php">SESSIONS</a></li>
+    </b>
   </ul>
 </div>
-
-<div id="container">
-  <div id="login">
-    <h2>WELCOME!</h2>
+  
+<div class="container login">
+    <h2 id="welcome">Create an account</h2> 
+  <div id="login" class="cols12 colw12">
     <form action="index.php" method="post" enctype="multipart/form-data"><br>
-      <label for="firstName">First name:</label> <br>
+      <b>
+      <label for="firstName" id="label">FIRST NAME:</label> <br>
         <input type="text" 
               name="firstName" 
               title="FirstName"
               required> <br>
-      <label for="lastName">Last name:</label> <br>
+      <label for="lastName">LAST NAME:</label> <br>
         <input type="text" 
               name="lastName" 
               title="LastName"
               required> <br>
-      <label for="adress">Adress:</label> <br>
+      <label for="adress">ADRESS:</label> <br>
         <textarea name="adress" 
                   cols="22" 
                   rows="2"></textarea> <br>
-      <label for="number">Phone number:</label> <br>
+      <label for="number">PHONE NUMBER:</label> <br>
         <input type="text" 
               pattern="(^(\+4|)?[0][7][0-9]{8})" 
               required 
               name="phoneNum" 
               title="title"
               placeholder="07-"> <br>
-      <label for="password">Password:</label> <br>
+      <label for="password">PASSWORD:</label> <br>
         <input minlength="5" 
               type="password" 
               name="password" 
               title="Password"
               id="password"
               pattern="[A-Za-z]{+6}"
-              required> <br>
-      <label for="fileToUpload">Insert your  pfp:</label> <br>
+              required
+              > <br>
+      <label for="fileToUpload">YOUR PFP:</label> <br>
       <input type="file" 
             title="fileToUpload" 
             name="fileToUpload"
@@ -60,9 +68,11 @@
       <input type="submit" 
             value="Submit" 
             name="submit"> 
+      </b>
     </form>
   </div>
 </div>
+
 
 </body>
 </html>
