@@ -18,7 +18,7 @@
       <li><a href="#home"><span class="material-icons">
         home
         </span></a></li>
-      <li class="active"><a href="./index.html">LOG IN</a></li>
+      <li><a href="./index.html">LOG IN</a></li>
       <li><a href="sessions.php">SESSIONS</a></li>
     </b>
   </ul>
