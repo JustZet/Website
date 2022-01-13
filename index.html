@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <link rel="stylesheet" media="screen and (max-width: 1050px)" href="css/widerscreen.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/smallerscreen.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
 </head>
@@ -25,7 +23,7 @@
   </ul>
 </div>
 
-<div class="container login cols12">
+<div class="container login">
     <h2 id="welcome">Create an account</h2> 
   <div id="login">
     <form action="index.php" method="post" enctype="multipart/form-data"><br>
@@ -46,7 +44,7 @@
                   rows="2"></textarea> <br>
       <label for="number">PHONE NUMBER:</label> <br>
         <input type="text" 
-              pattern="(^(\+4|)?[0][7][0-9]{8})" 
+              pattern="(^[0][7][0-9]{8})" 
               required 
               name="phoneNum" 
               title="title"
