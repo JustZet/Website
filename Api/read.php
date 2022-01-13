@@ -29,8 +29,12 @@
           extract($row);
 
           $post_item = array(
-            'id' => $ID,
-            'name' => $FirstName
+            'ID' => $ID,
+            'First Name' => $FirstName,
+            'Last Namee' => $LastName,
+            'Adress' => $Adress,
+            'Mobile' => $PhoneNumber,
+            'Pfp' => $FileName
           );
 
           // Push to "data"
