@@ -7,7 +7,7 @@
     <title>About</title>
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" media="screen and (max-width: 1050px)" href="css/widerscreen.css">
-    <link rel="stylesheet" media="screen and (max-width: 650px)" href="css/smallerscreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/smallerscreen.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
 </head>
@@ -31,7 +31,7 @@
         echo 'Your full name: '.$_SESSION['fullName'].'<br>';
         echo 'Your adress: '.$_SESSION['adress'].'<br>';
         echo 'Phone number: '.$_SESSION['mobile'].'<br>';
-    }
+    };
     ?>
 </div>
 </body>
