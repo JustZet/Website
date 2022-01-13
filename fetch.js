@@ -1,6 +1,6 @@
-let Request = new Request("Api/read.php");
+let request = new Request("Api/read.php");
 
-fetch(Request)
+fetch(request)
 .then((resp) => {
     return resp.json();
 })
