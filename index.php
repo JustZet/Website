@@ -38,7 +38,7 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $type = $_FILES['fileToUpload']['type'];
 //Check if the database is compatible.
-require('db/connect.php');
+require('database/connect.php');
 
 // check type of file.
 if($imageFileType != "img" && $imageFileType != "jpeg" && $imageFileType != "jpg" && $imageFileType != "gif" && $imageFileType != "png") {
