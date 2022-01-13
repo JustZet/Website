@@ -5,9 +5,6 @@
     }
   }
 
-* {
-  box-sizing: border-box;
-}
 
 .cols1 {width: 8.33%;}
 .cols2 {width: 16.66%;}
@@ -22,9 +19,7 @@
 .cols11 {width: 91.66%;}
 .cols12 {width: 100%;}
 
-[CLASS*="cols"] {
-  width: 100%;
-}
+
 #login {
   color: aliceblue;
 }
