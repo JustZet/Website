@@ -31,7 +31,7 @@
           $post_item = array(
             'ID' => $ID,
             'First Name' => $FirstName,
-            'Last Namee' => $LastName,
+            'Last Name' => $LastName,
             'Adress' => $Adress,
             'Mobile' => $PhoneNumber,
             'Pfp' => $FileName
