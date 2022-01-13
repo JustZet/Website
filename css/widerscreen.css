@@ -5,9 +5,6 @@
     }
   }
 
-  * {
-    box-sizing: border-box;
-  }
   
   .colw1 {width: 8.33%;}
   .colw2 {width: 16.66%;}
@@ -22,6 +19,3 @@
   .colw11 {width: 91.66%;}
   .colw12 {width: 100%;}
   
-  [CLASS*="col"] {
-    width: 100%;
-  }
