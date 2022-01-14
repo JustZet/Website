@@ -30,8 +30,8 @@
 
           $post_item = array(
             'ID' => $ID,
-            'First Name' => $FirstName,
-            'Last Name' => $LastName,
+            'First_Name' => $FirstName,
+            'Last_Name' => $LastName,
             'Adress' => $Adress,
             'Mobile' => $PhoneNumber,
             'Pfp' => $FileName
