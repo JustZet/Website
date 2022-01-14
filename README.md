@@ -4,5 +4,5 @@ Hello! This is my first website! I used HTML, CSS, MySql and php for this. :ship
 Is connected with a database named "Index", have one table named "website". <br>
 I changed some things and now look like :
             <img src="https://i.imgur.com/cJQXMJe.png" alt="This is a image">
-            Preview the singup form on <a  target="__blank" src="https://codepen.io/zetcode/pen/xxXmmqM">Here!</a>
+            Preview the singup form <a  target="__blank" href="https://codepen.io/zetcode/pen/xxXmmqM">Here!</a>
 </html>
