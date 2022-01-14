@@ -1,6 +1,12 @@
 <?php
-if ($con = mysqli_connect("localhost","root","","index")) {
-    
+// Db params
+$host = "localhost";
+$username = "root";
+$db_name = "index";
+$password = "";
+// Connect with database
+if ($con = mysqli_connect($host, $username, $password, $db_name)) {
+
 } else {
-    echo mysqli_connect_error();
+    echo "Error". $conn->error;
 }
