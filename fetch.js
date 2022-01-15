@@ -1,13 +1,16 @@
-function fetchData() {
-    let request = new Request("Api/read.php");
-    fetch(request) 
+let request = new Request("Api/users.php");
+async function fetchData() {
+    await fetch(request) 
     .then((resp) => {
         return resp.json();
     })
     .then((data) => {
         console.log(data);
         const html = data.data.map(users => {
-            return `<p> Adress: ${users.First_Name} </p>`;
+            return `<div>
+            <p>User: ${users.First_Name} </p>
+            <p>LastName: ${users.Last_Name} </p>
+            </div>`;
         })
         .join("");
         document.querySelector("#users")
