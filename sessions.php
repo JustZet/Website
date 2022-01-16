@@ -15,11 +15,12 @@
 <div id="sources">
   <ul>
     <b>
-      <li><a href="#home"><span class="material-icons">
+      <li><a href="home.html"><span class="material-icons">
         home
         </span></a></li>
-      <li><a href="./index.html">LOG IN</a></li>
-      <li class="active"><a href="sessions.php">SESSIONS</a></li>
+      <li class="active"><a href="sessions.php">Sessions</a></li>
+      <li id="signup"><a href="signup.html">Sign up</a></li>
+      <li id="signin"><a href="signin.html">Sign in</a></li>
     </b>
   </ul>
 </div>
