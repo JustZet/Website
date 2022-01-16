@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+<div id="sources">
+  <ul>
+    <b>
+      <li><a href="home.html"><span class="material-icons">
+        home
+        </span></a></li>
+      <li><a href="sessions.php">Sessions</a></li>
+      <li id="signup" 
+          class="active"><a href="signup.html">Sign up</a></li>
+      <li id="signin"><a href="signin.html">Sign in</a></li>
+    </b>
+  </ul>
+</div>
+
+<div class="container login">
+    <h2 id="welcome">Create an account:</h2> 
+<div>
+    <form action="redirect.php" method="post" enctype="multipart/form-data"><br>
+      <b>
+      <label for="firstName" id="label">FIRST NAME:</label> <br>
+        <input type="text" 
+              name="firstName" 
+              title="FirstName"
+              required> <br>
+      <label for="lastName">LAST NAME:</label> <br>
+        <input type="text" 
+              name="lastName" 
+              title="LastName"
+              required> <br>
+      <label for="adress">ADRESS:</label> <br>
+        <textarea name="adress" 
+                  cols="22" 
+                  rows="2"></textarea> <br>
+      <label for="number">PHONE NUMBER:</label> <br>
+        <input type="text" 
+              pattern="(^[0][7][0-9]{8})" 
+              required 
+              name="phoneNum" 
+              title="title"
+              placeholder="07-"> <br>
+      <label for="password">PASSWORD:</label> <br>
+        <input minlength="5" 
+              type="password" 
+              name="password" 
+              title="Password"
+              id="password"
+              pattern="[A-Za-z]{+6}"
+              required
+              > <br>
+      <label for="fileToUpload">YOUR PFP:</label> <br>
+      <input type="file" 
+            title="fileToUpload" 
+            name="fileToUpload"
+            id="fileToUpload"> <br>
+      <a href="signin.html"
+         id="sign-in">sign in</a>
+      <input type="submit" 
+            value="Submit" 
+            name="submit">
+      </b>
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>
