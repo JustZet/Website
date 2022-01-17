@@ -60,9 +60,34 @@ body {
     .col-dsk11 {width: 91.66%;}
     .col-dsk12 {width: 100%;}
 }
-
+#signin-bar {
+    float: right;
+}
+.signin-bottom {
+    margin-top: 11px;
+    padding:10px 30px; 
+    float: right;
+    color: white;
+    cursor:pointer;
+    font-size: 20px;
+}
+#signup-bar {
+    border-radius: 3px;
+    background-color: rgb(67, 190, 67);
+    margin-left: 15px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.signup-bottom {
+    padding:4px 25px; 
+    float: right;
+    color: white;
+    cursor:pointer;
+    font-size: 20px;
+}
 #sources {
-    background-color: rgb(39, 39, 39);
+    padding: 15px;
 }
 a {
     text-decoration: none;
@@ -87,9 +112,6 @@ li a {
 }
 li a:hover {
     background-color: #333;
-}
-.active {
-    background-color: rgb(81, 255, 0);
 }
 span.material-icons{
     color: rgb(230, 230, 230);
@@ -158,7 +180,9 @@ input[type=file] {
 
 input[type=submit] {
     margin-top: 15px;
-    padding:10px 30%; 
+    padding:10px 10%; 
+    float: right;
+    margin-right: 65px;
     border: none;
     color: white;
     cursor:pointer;
