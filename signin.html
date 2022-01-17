@@ -17,9 +17,8 @@
         home
         </span></a></li>
       <li><a href="sessions.php">Sessions</a></li>
-      <li id="signup"><a href="signup.html">Sign up</a></li>
-      <li id="signin"
-      class="active"><a href="signin.html">Sign in</a></li>
+      <li id="signup-bar"><a href="signup.html">Sign up</a></li>
+      <li id="signin-bar"><a href="signin.html">Sign in</a></li>
     </b>
   </ul>
 </div>
@@ -27,13 +26,15 @@
 <div class="container login">
     <h2 id="welcome">Sign in:</h2> 
 <div>
-    <form action="signedin.php" method="post" enctype="multipart/form-data"><br>
+    <form action="processing.php" method="post" enctype="multipart/form-data"><br>
       <b>
-      <label for="firstName" id="label">PHONE NUMBER:</label> <br>
+      <label for="number">PHONE NUMBER:</label> <br>
         <input type="text" 
-              name="firstName" 
-              title="FirstName"
-              required> <br>
+              pattern="(^[0][7][0-9]{8})" 
+              required 
+              name="phoneNum" 
+              title="title"
+              placeholder="07-"> <br>
       <label for="password">PASSWORD:</label> <br>
         <input minlength="5" 
               type="password" 
@@ -41,13 +42,12 @@
               title="Password"
               id="password"
               pattern="[A-Za-z]{+6}"
-              required
-              > <br>
+              required> <br>
       <input type="submit" 
             value="Sign in" 
             name="submit"> <br>
       <a href="signup.html"
-         id="sign-up">Need an account?</a>
+         class="signup-bottom">Need an account?</a>
       </b>
     </form>
   </div>
