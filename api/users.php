@@ -4,7 +4,7 @@
   header('Content-Type: application/json');
 
   include_once '/xampp/htdocs/local/Website/database/Database.php';
-  include_once '/xampp/htdocs/local/Website/Models/post.php';
+  include_once '/xampp/htdocs/local/Website/backend/post.php';
 
   // Instantiate DB & connect
   $database = new Database();
