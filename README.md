@@ -3,5 +3,5 @@
 Hello! This is my first website! I used HTML, CSS, MySql and php for this. :shipit: <br>
 Is connected with a database named "Index", have one table named "website". <br>
 I changed some things and now look like :
-            Preview the singup form <a href="https://codepen.io/zetcode/pen/xxXmmqM" target="_blank" rel="noopener noreferrer">Here!</a>
+
 </html>
