@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
       <li><a href="home.html"><span class="material-icons">
         home
         </span></a></li>
-      <li id="signup-bar"><a href="signup.html">Sign up</a></li>
+      <li id="signup-bar"><a href="signup.php">Sign up</a></li>
       <li id="signin-bar"><a href="signin.php">Sign in</a></li>
       <li id="sessions-bar"><a href="sessions.php">Sessions</a></li>
     </b>
@@ -24,7 +24,7 @@
 </div>
 
 <div class="container login">
-    <h2 id="welcome">Sign in:</h2> 
+    <h2>Sign in:</h2> 
 <div>
     <form action="backend/connect.php" method="post" enctype="multipart/form-data"><br>
       <b>
@@ -46,15 +46,12 @@
       <input type="submit" 
             value="Sign in" 
             name="submit"> <br>
-      <a href="signup.html"
-         class="signup-bottom">Need an account?</a>
+      <a href="signup.php"
+         class="signup-bottom">Need an account?</a> 
       </b>
       <?php 
          if(isset($_GET['info']) && $_GET['info'] == 'error' ) {
-             echo '<p ID="error">Phone number or passowrd incorect!</p>';
-         }
-         if(isset($_GET['info']) && $_GET['info'] == 'created') {
-            echo '<p>Your account has created succesful!</p>';
+             echo '<p ID="error"><i>Phone number or passowrd are incorect!</i></p>';
          }
          ?>
     </form>
