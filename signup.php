@@ -24,7 +24,7 @@
 </div>
 
 <div class="container login">
-    <h2 id="welcome">Create an account:</h2> 
+    <h2>Create an account:</h2> 
 <div>
     <form action="backend/redirect.php" method="post" enctype="multipart/form-data"><br>
       <b>
@@ -62,13 +62,19 @@
       <input type="file" 
             title="fileToUpload" 
             name="fileToUpload"
-            id="fileToUpload"> <br>
+            id="fileToUpload">
+         <br>
       <input type="submit" 
             value="Submit" 
             name="submit">
       <a href="signin.php"
-         class="signin-bottom">sign in</a>
+         class="signin-bottom">sign in</a> <br>
       </b>
+      <?php
+        if(isset($_GET['info']) && $_GET['info'] == 'fileError') {
+            echo '<p id="errorfile"><i>Sorry but is accepted only pfp .jpeg / .gif / .png...</i></p>';
+        }
+        ?>
     </form>
   </div>
 </div>
