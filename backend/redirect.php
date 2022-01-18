@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connected</title>
-  <link rel="stylesheet" href="../css/index.css" type="text/css">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
 </head>
@@ -47,9 +47,7 @@ if($imageFileType != "img" &&
    $imageFileType != "jpg" && 
    $imageFileType != "gif" && 
    $imageFileType != "png") {
-  echo 'Sorry but is accepted only media .jpeg / .gif / .png... <br>
-  Please go back to sign up page and load one accepted type of image. <br>';
-  echo '<a href="../signup.html" id="goBack">Go back!</a>';
+    header('Location: ../signup.php?info=fileError');
   die();
 } 
 else {
@@ -66,7 +64,7 @@ else {
   $sql = "INSERT INTO website (FirstName, LastName, Adress, PhoneNumber, Password, FileName) 
           VALUES ('$firstname', '$lastname', '$Adress', '$Phone', '$Password', '$Img');";
   if ($con->query($sql) === TRUE) {
-    header("Location: ../signin.php?=created");
+    header("Location: ../signin.php?info=created");
   } else {
       echo "Error: ".$sql.'<br>'.$con->error;
     }
