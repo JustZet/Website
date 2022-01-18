@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=warp'); 
+    
+/*Html elements--*/
+* {
+    box-sizing: border-box;
+}
+body {
+    /*background-image: url(../images/background.jpg);*/
+    background: linear-gradient(#2b1055, #7597de);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(34, 34, 34);
+    font-family: 'Poppins', sans-serif;
+    color: #ccc;
+}
+h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 8px;
+    font-size: 25px;
+    margin-right: 36%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+li {    
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+form {
+    text-align: center;
+}
+label {
+    font-size: 15px;
+    float: left;
+    margin-left: 62px;
+}
+input, 
+textarea {
+    margin-bottom: 10px;
+    border:1px solid rgb(20, 20, 20); 
+    border-radius: 5px;
+}
+input[type=text], 
+input[type=password], 
+textarea {
+    width: 74%;
+    height: 40px;
+    background-color: #1f2124;
+    color: rgb(209, 209, 209);
+    padding-left: 15px;
+}
+
+input[type=text]:focus,
+[type=password]:focus{
+    border-color: rgb(0, 97, 187);
+}
+input[type=file] {
+    border: none;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    padding:10px 10%; 
+    float: right;
+    margin-right: 65px;
+    border: none;
+    color: white;
+    cursor:pointer;
+    background-color: rgb(4, 121, 230);
+    font-size: 20px;
+}
+input[type=submit]:hover {
+    background-color: rgb(0, 97, 187);
+}
+
+
+
+/*Id's and classes--*/
+#sources {
+    padding: 5px;
+}
+
+span.material-icons{
+    color: rgb(230, 230, 230);
+    font-size: 30px;
+    border-radius: 3px;
+} 
+#signin-bar, 
+#signup-bar, 
+#sessions-bar{
+    float: right;
+}
+#signup-bar {
+    border-radius: 3px;
+    background-color: rgb(67, 190, 67);
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#sessions-bar {
+    background-color: rgb(90, 59, 204);
+    border-radius: 3px;
+    margin-right: 15px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ccc;
+    background-color: #23272A;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);  
+}
+/*Container size*/
+.login {
+    width: 480px;
+    height: 680px;
+}
+
+.info {
+    width: 60%;
+}
+.signin-bottom,
+.signup-bottom {
+    text-decoration: none;
+    float: right;
+    cursor:pointer;
+    font-size: 20px;
+    color: white;
+}
+.signin-bottom {
+    margin-top: 11px;
+    padding:10px 30px; 
+}
+.signup-bottom {
+    padding:0px 25px; 
+}
+#error {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding-top: 40px;
+}
+#errorfile {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 35px;
+}
