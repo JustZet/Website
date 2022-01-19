@@ -30,6 +30,5 @@
     };
     ?>
 </div>
-<script src="backend/background.js"></script>
 </body>
 </html>
