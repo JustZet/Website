@@ -5,23 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body>
-<div id="sources">
-  <ul>
-    <b>
-      <li><a href="home.html"><span class="material-icons">
-        home
-        </span></a></li>
-      <li id="signup-bar"><a href="signup.html">Sign up</a></li>
-      <li id="signin-bar"><a href="signin.php">Sign in</a></li>
-      <li id="sessions-bar"><a href="sessions.php">Sessions</a></li>
-    </b>
-  </ul>
-</div>
+<body class="init">
+<header id="sources">
+  <ul><b>
+    <li><a href="home.html"><span class="material-icons active">home</span></a></li>
+    <li id="signup-bar"><a href="signup.php">Sign up</a></li>
+    <li id="signin-bar"><a href="signin.php">Sign in</a></li>
+    <li id="sessions-bar"><a href="sessions.php">Sessions</a></li>
+  </ul></b>
+</header>
 
 <div class="container info">
     <?php
@@ -34,5 +30,6 @@
     };
     ?>
 </div>
+<script src="backend/background.js"></script>
 </body>
 </html>
