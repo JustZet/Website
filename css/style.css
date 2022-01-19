@@ -2,47 +2,113 @@
     
 /*Html elements--*/
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body {
-    /*background-image: url(../images/background.jpg);*/
     background: linear-gradient(#2b1055, #7597de);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: rgb(34, 34, 34);
-    font-family: 'Poppins', sans-serif;
     color: #ccc;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
-h2 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding-top: 8px;
-    font-size: 25px;
-    margin-right: 36%;
+body.init {
+    background-image: url("../images/background/wallpaper.png");
 }
-ul {
+/*Header -- */
+header{
+    position: absolute;
     margin: 0;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
-    font-size: 15px;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     letter-spacing: 1px;
+    z-index: 1000;
 }
-li {    
+header ul {
+    margin: 0;
+    padding: 25px;
+    overflow: hidden;
+    font-size: 14px;
+}
+header ul li {    
     float: left;
+    list-style: none;
 }
-li a {
+header ul li a {
     display: block;
     color: white;
     text-align: center;
     padding: 6px 10px;
     text-decoration: none;
 }
+header ul li#signup-bar {
+    margin-right: 1vw;
+}
+span.material-icons{
+    color: rgb(230, 230, 230);
+    font-size: 30px;
+    border-radius: 3px;
+} 
+#signin-bar, 
+#signup-bar, 
+#sessions-bar{
+    float: right;
+    margin-left: 15px;
+}
+#signup-bar {
+    border-radius: 3px;
+    background-color: rgb(67, 190, 67);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 25px;
+}
+#sessions-bar {
+    background-color: rgb(90, 59, 204);
+    border-radius: 3px;
+    margin-right: 15px;
+}
+/*Container on body --*/
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ccc;
+    background-color: #23272A;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0); 
+    z-index: 50; 
+}
+#surces {
+    padding-top: 10px;
+}
+.login {
+    width: 480px;
+    height: 680px;
+}
+
+.info {
+    width: 60%;
+}
+.container h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 25px;
+    margin-right: 36%;
+}
+/*Input fields --*/
 form {
     text-align: center;
 }
-label {
+form label {
     font-size: 15px;
     float: left;
     margin-left: 62px;
@@ -65,7 +131,7 @@ textarea {
 
 input[type=text]:focus,
 [type=password]:focus{
-    border-color: rgb(0, 97, 187);
+    border-color: 2px solid rgb(0, 97, 187);
 }
 input[type=file] {
     border: none;
@@ -85,56 +151,8 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: rgb(0, 97, 187);
 }
-
-
-
-/*Id's and classes--*/
-#sources {
-    padding: 5px;
-}
-
-span.material-icons{
-    color: rgb(230, 230, 230);
-    font-size: 30px;
-    border-radius: 3px;
-} 
-#signin-bar, 
-#signup-bar, 
-#sessions-bar{
-    float: right;
-}
-#signup-bar {
-    border-radius: 3px;
-    background-color: rgb(67, 190, 67);
-    margin-left: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-#sessions-bar {
-    background-color: rgb(90, 59, 204);
-    border-radius: 3px;
-    margin-right: 15px;
-}
-
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ccc;
-    background-color: #23272A;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px rgb(0, 0, 0);  
-}
-/*Container size*/
-.login {
-    width: 480px;
-    height: 680px;
-}
-
-.info {
-    width: 60%;
-}
+/*Redirect buttons if you don't already have an account --
+--under the input fields--*/
 .signin-bottom,
 .signup-bottom {
     text-decoration: none;
@@ -150,14 +168,87 @@ span.material-icons{
 .signup-bottom {
     padding:0px 25px; 
 }
+/*Inf message on connect--*/
 #error {
     color: rgb(255, 0, 0);
     text-align: center;
-    padding-top: 40px;
+    padding-top: 50px;
+    font-size: 13px;
 }
-#errorfile {
-    color: red;
-    font-size: 14px;
-    text-align: center;
-    padding-top: 35px;
+/*Background*/
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #190835, transparent);
+    z-index: 51;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section img#moon {
+    mix-blend-mode: screen;
+
+}
+#montain {
+    z-index: 8;
+}
+#front {
+    z-index: 10;
+}
+#text {
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    white-space: nowrap;
+    font-size: 10vh;
+    z-index: 9;
+}
+#content {
+    position: relative;
+    padding: 2vw;
+    background: #190835;
+    z-index: 50;
+}
+#content h2 {
+    font-size: 3.5em;
+    margin: 0px;
+    margin-bottom: 10px
+}
+#content p {
+    margin-right: 7vw;
+    font-size: 1.2em;
+}
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #222; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #160835; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #120629; 
 }
