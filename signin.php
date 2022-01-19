@@ -9,19 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body>
-<div id="sources">
-  <ul>
-    <b>
-      <li><a href="home.html"><span class="material-icons">
-        home
-        </span></a></li>
-      <li id="signup-bar"><a href="signup.php">Sign up</a></li>
-      <li id="signin-bar"><a href="signin.php">Sign in</a></li>
-      <li id="sessions-bar"><a href="sessions.php">Sessions</a></li>
-    </b>
-  </ul>
-</div>
+<body class="init">
+<header id="sources">
+  <ul><b>
+    <li><a href="home.html"><span class="material-icons active">home</span></a></li>
+    <li id="signup-bar"><a href="signup.php">Sign up</a></li>
+    <li id="signin-bar"><a href="signin.php">Sign in</a></li>
+    <li id="sessions-bar"><a href="sessions.php">Sessions</a></li>
+  </ul></b>
+</header>
 
 <div class="container login">
     <h2>Sign in:</h2> 
@@ -57,6 +53,5 @@
     </form>
   </div>
 </div>
-
 </body>
 </html>
