@@ -10,7 +10,7 @@
       rel="stylesheet">
 </head>
 <body class="init">
-<header id="sources">
+<header id="navbar">
   <ul><b>
     <li><a href="home.html"><span class="material-icons active">home</span></a></li>
     <li id="signup-bar"><a href="signup.php">Sign up</a></li>
@@ -22,9 +22,8 @@
 <div class="container login">
     <h2>Sign in:</h2> 
 <div>
-    <form action="backend/connect.php" method="post" enctype="multipart/form-data"><br>
-      <b>
-      <label for="number">PHONE NUMBER:</label> <br>
+    <form action="backend/connect.php" method="post" enctype="multipart/form-data"><br><b>
+      <label for="number">PHONE NUMBER:</label>
         <input type="text" 
               pattern="(^[0][7][0-9]{8})" 
               required 
