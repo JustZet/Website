@@ -33,9 +33,9 @@ header{
 }
 header ul {
     margin: 0;
-    padding: 25px;
+    padding: 1em;
     overflow: hidden;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 header ul li {    
     float: left;
@@ -48,9 +48,6 @@ header ul li a {
     padding: 6px 10px;
     text-decoration: none;
 }
-header ul li#signup-bar {
-    margin-right: 1vw;
-}
 span.material-icons{
     color: rgb(230, 230, 230);
     font-size: 30px;
@@ -58,7 +55,9 @@ span.material-icons{
 } 
 #signin-bar, 
 #signup-bar, 
-#sessions-bar{
+#sessions-bar,
+#list-bar
+ {
     float: right;
     margin-left: 15px;
 }
@@ -85,9 +84,6 @@ span.material-icons{
     border-radius: 5px;
     box-shadow: 10px 10px 20px rgb(0, 0, 0); 
     z-index: 50; 
-}
-#surces {
-    padding-top: 10px;
 }
 .login {
     width: 480px;
