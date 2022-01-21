@@ -10,7 +10,7 @@
       rel="stylesheet">
 </head>
 <body class="init">
-<header id="sources">
+<header id="navbar">
   <ul><b>
     <li><a href="home.html"><span class="material-icons active">home</span></a></li>
     <li id="signup-bar"><a href="signup.php">Sign up</a></li>
