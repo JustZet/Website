@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <script src="backend/functions.js"></script>
 </head>
 <body class="init">
-<header id="navbar">
-  <ul><b>
-    <li><a href="home.html"><span class="material-icons active">home</span></a></li>
-    <li id="signup-bar"><a href="signup.php">Sign up</a></li>
-    <li id="signin-bar"><a href="signin.php">Sign in</a></li>
-    <li id="sessions-bar"><a href="sessions.php">Sessions</a></li>
-  </ul></b>
-</header>
+
+<header id="navbar" class="topnav"><ul><b>
+    <div id="Sidepanel" class="sidepanel">
+      <li><div id="mainmenu">Main menu</div></li>
+      <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="material-icons">close</span></a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="signup.php">Sign up</a></li>
+      <li><a href="signin.php">Sign in</a></li>
+      <li><a href="sessions.php">Sessions</a></li>
+    </div>
+    <a href="javascript:void(0);" class="openbtn" onclick="openNav()">
+      <span class="material-icons">menu</span>
+    </a>
+</header></ul></b>
 
 <div class="container login">
     <h2>Sign in:</h2> 
