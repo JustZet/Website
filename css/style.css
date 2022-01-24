@@ -23,55 +23,53 @@ body.init {
 /*Header -- */
 header{
     position: absolute;
-    margin: 0;
-    left: 0;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    letter-spacing: 1px;
     z-index: 1000;
 }
 header ul {
     margin: 0;
-    padding: 1em;
+    padding: 2em;
     overflow: hidden;
     font-size: 0.9rem;
 }
 header ul li {    
-    float: left;
     list-style: none;
 }
 header ul li a {
     display: block;
-    color: white;
-    text-align: center;
-    padding: 6px 10px;
+
+    padding: 0.5em 2em;
     text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+}
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.98;
+}
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+.closebtn  {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
 }
 span.material-icons{
-    color: rgb(230, 230, 230);
-    font-size: 30px;
-    border-radius: 3px;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
 } 
-#signin-bar, 
-#signup-bar, 
-#sessions-bar,
-#list-bar
- {
-    float: right;
-    margin-left: 15px;
-}
-#signup-bar {
-    border-radius: 3px;
-    background-color: rgb(67, 190, 67);
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 25px;
-}
-#sessions-bar {
-    background-color: rgb(90, 59, 204);
-    border-radius: 3px;
-    margin-right: 15px;
+#mainmenu {
+    padding: 0.1rem 0.1rem 1rem 1.3rem;
+    color: #333;
 }
 /*Container on body --*/
 .container {
