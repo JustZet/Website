@@ -24,6 +24,7 @@ body.init {
 header{
     position: absolute;
     z-index: 1000;
+    display: flex;
 }
 header ul {
     margin: 0;
@@ -36,27 +37,32 @@ header ul li {
 }
 header ul li a {
     display: block;
-
     padding: 0.5em 2em;
     text-decoration: none;
     color: #818181;
     transition: 0.3s;
+    font-size: 1.1rem;
 }
 .sidepanel  {
-    width: 0;
     position: fixed;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
     height: 100%;
+    width: 0;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-    opacity: 0.98;
+    padding-top: 4.5em;
 }
 .sidepanel a:hover {
     color: #f1f1f1;
+}
+.border-menu {
+    /**/ 
 }
 .closebtn  {
     position: absolute;
