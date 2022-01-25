@@ -2,7 +2,6 @@
   class Post {
     // DB stuff
     private $conn;
-    private $table = 'website';
 
     // Post Properties
     public $ID;
