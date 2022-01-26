@@ -13,12 +13,16 @@
 
 <header id="navbar" class="topnav"><ul><b>
     <div id="Sidepanel" class="sidepanel">
-      <li><div id="mainmenu">Main menu</div></li>
-      <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="material-icons">close</span></a></li>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="signup.php">Sign up</a></li>
-      <li><a href="signin.php">Sign in</a></li>
-      <li><a href="sessions.php">Sessions</a></li>
+      <div class="sidepanel-top">
+        <li><div id="mainmenu">Main menu</div></li>
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="material-icons">close</span></a></li>
+        <li class="border-menu"><a href="home.html">Home</a></li>
+        <li class="border-menu"><a href="sessions.php">Sessions</a></li>
+      </div>
+      <div class="sidepanel-bottom">
+        <li class="border-menu"><a href="signup.php">Sign up</a></li>
+        <li class="border-menu"><a href="signin.php">Sign in</a></li>
+      </div>
     </div>
     <a href="javascript:void(0);" class="openbtn" onclick="openNav()">
       <span class="material-icons">menu</span>
