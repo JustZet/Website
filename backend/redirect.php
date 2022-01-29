@@ -9,7 +9,7 @@ $imgFileSize          = $_FILES["fileToUpload"]['size']; // Size of file
 $Img                  = $_FILES['fileToUpload']['name']; // Name of file
 $type                 = $_FILES['fileToUpload']['type']; // Type of file
 
-$target_dir           = "../uploads/";
+$target_dir           = "../images/uploads/";
 $target_file          = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $imageFileType        = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 

@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(#2b1055, #7597de);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(34, 34, 34);
+    color: #ccc;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/*Background*/
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #190835, transparent);
+    z-index: 51;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#stars {
+    z-index: 1;
+}
+#roks-3 {
+    z-index: 2;
+}
+#moon {
+    mix-blend-mode: screen;
+    z-index: 3;
+}
+#text {
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    white-space: nowrap;
+    font-size: 10vh;
+    z-index: 4;
+}
+#roks-2 {
+    z-index: 5;
+}
+#roks-1 {
+    z-index: 6;
+}
+#ozn {
+    z-index: 7;
+}

@@ -1,3 +1,4 @@
+// Call data from the rest api
 let request = new Request("Api/users.php");
 async function fetchData() {
     await fetch(request) 
