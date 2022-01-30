@@ -29,12 +29,12 @@
           extract($row);
 
           $post_item = array(
-            'ID' => $ID,
+            'ID'         => $ID,
             'First_Name' => $FirstName,
-            'Last_Name' => $LastName,
-            'Adress' => $Adress,
-            'Mobile' => $PhoneNumber,
-            'Pfp' => $FileName
+            'Last_Name'  => $LastName,
+            'Adress'     => $Adress,
+            'Mobile'     => $PhoneNumber,
+            'Pfp'        => $FileName
           );
 
           // Push to "data"
@@ -47,6 +47,6 @@
   } else {
         // No Categories
         echo json_encode(
-          array('message' => 'No Categories Found')
+          array('message' => 'No categories Found')
         );
   }
