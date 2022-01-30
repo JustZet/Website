@@ -43,13 +43,14 @@ section img {
 }
 #stars {
     z-index: 1;
+    opacity: 0.5;
 }
 #roks-3 {
-    z-index: 2;
+    z-index: 3;
 }
 #moon {
-    mix-blend-mode: screen;
-    z-index: 3;
+    mix-blend-mode: lighten;
+    z-index: 2;
 }
 #text {
     position: absolute;
