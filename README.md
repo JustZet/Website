@@ -1,6 +1,6 @@
 <h1> 🔥 Welcome!</h1>
 
-#### 🎉 This is my first website! <br>
+#### 🎉 This is my first website template! <br>
 
  I used :<br> 
   📚 HTML for organizing the page format, <br>
