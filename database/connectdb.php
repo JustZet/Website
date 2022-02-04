@@ -1,9 +1,9 @@
 <?php
 // Db params
-$host = "localhost";
-$username = "root";
-$db_name = "index";
-$password = "";
+$host       = "localhost";
+$username   = "root";
+$db_name    = "index";
+$password   = "";
 // Connect with database
 $con = mysqli_connect($host, $username, $password, $db_name);
 

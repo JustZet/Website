@@ -29,16 +29,16 @@
     </a>
 </header></ul></b>
 
-<div class="container info">
+<section class="container info">
     <?php
     session_start();
     if(isset($_SESSION['fullName'])){
       echo '<h3>Your profile: </h3> <br>';
-        echo 'Your full name: '.$_SESSION['fullName'].'<br>';
-        echo 'Your adress: '.$_SESSION['adress'].'<br>';
-        echo 'Phone number: '.$_SESSION['mobile'].'<br>';
+        echo 'Your full name: ' .$_SESSION['fullName'].'<br>';
+        echo 'Your adress: '    .$_SESSION['adress']  .'<br>';
+        echo 'Phone number: '   .$_SESSION['mobile']  .'<br>';
     };
     ?>
-</div>
+</section>
 </body>
 </html>

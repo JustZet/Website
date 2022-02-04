@@ -1,7 +1,7 @@
 // Call data from the rest api
 let request = new Request("Api/users.php");
-async function fetchData() {
-    await fetch(request) 
+function fetchData() {
+    fetch(request) 
     .then((resp) => {
         return resp.json();
     })
@@ -9,8 +9,8 @@ async function fetchData() {
         console.log(data);
         const html = data.data.map(users => {
             return `<div>
-            <p>User: ${users.First_Name} </p>
-            <p>LastName: ${users.Last_Name} </p>
+            <p>User:        ${users.First_Name} </p>
+            <p>LastName:    ${users.Last_Name}  </p>
             </div>`;
         })
         .join("");
