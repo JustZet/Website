@@ -3,8 +3,8 @@
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
 
-  include_once '/xampp/htdocs/local/Website/database/Database.php';
-  include_once '/xampp/htdocs/local/Website/backend/post.php';
+  include_once 'src/Database.php';
+  include_once 'src/post.php';
 
   // Instantiate DB & connect
   $database = new Database();
