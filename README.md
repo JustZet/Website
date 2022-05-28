@@ -1,14 +1,26 @@
-<h1> 🔥 Welcome!</h1>
+<h1 align="center"> 🔥 Welcome!</h1>
 
-#### 🎉 This is my first website template! <br>
+<h4 align = "center">🎉 Welcome! This is my first attempt for create an website! I used html for makeup webpage, php for connect with database, css for stilyng webpage, mysql as database, javascript for dinamically interaction.</h4>
 
- I used :<br> 
-  📚 HTML for organizing the page format, <br>
-  🎨 CSS to give a nice look,  <br>
-  📝 MySql for create and configurate a database, <br> 
-  🔧 PHP for create a user interaction with database,<br> 
-  🔧 JavaScript to create dinamicaly interaction. <br> 
-Is connected with a database named "Index", have one table named "website". <br>
-  🌐 I used <a href="https://www.apachefriends.org/index.html">xampp</a> for connect in a local host.
+ ### 🤔 What website delivers?<br> 
+ 
+* 🌟 Interactive user interface. <br>
+* 📘 Api where is stored user information.<br>
+* 🗺️ Local database conexion. <br> 
+* 🔑 Login, Create an account, and Disconnect methods. <br> 
+* 💫 Dinamically user interaction. <br> 
+* 📋 Profile image is stored in local folder and route is saved in database.
 
-
+### 🍎 Installation:
+* First of all you'll need to install <a 
+href="https://www.apachefriends.org/index.html">**xampp**<a> for execute php code and create database.
+ 
+ 
+* After you installed xampp, you'll need to start 
+  - **Apache** - This will help you to execute php code.
+  - **MySQL** - This will help you to use database.
+ 
+* After that you are able to create database. 
+  - On [XAMPP Control Panel](https://imag.malavida.com/mvimgbig/download-fs/xampp-6688-1.jpg) click on **Admin** at **MySQL** row.
+  - Create a database, don't worry! I saved mysql source code for create database [**here**](database/database.sql).
+ 
