@@ -11,7 +11,7 @@
 * 💫 Dinamically user interaction. <br> 
 * 📋 Profile image is stored in local folder and route is saved in database.
 
-### 🍎 Installation:
+### 🌱 Installation:
 * First of all you'll need to install <a 
 href="https://www.apachefriends.org/index.html">**xampp**<a> for execute php code and create database.
  
@@ -24,3 +24,4 @@ href="https://www.apachefriends.org/index.html">**xampp**<a> for execute php cod
   - On [XAMPP Control Panel](https://imag.malavida.com/mvimgbig/download-fs/xampp-6688-1.jpg) click on **Admin** at **MySQL** row.
   - Create a database, don't worry! I saved mysql source code for create database [**here**](database/database.sql).
  
+### 🍎 [Preview](https://justzet.github.io/Website/home.html)
