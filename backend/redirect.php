@@ -39,6 +39,7 @@ else {
   $sql = "INSERT INTO website 
                       (FirstName, LastName, Adress, PhoneNumber, Password, FileName) 
           VALUES ('$firstname', '$lastname', '$Adress', '$Phone', '$Password', '$Img');";
+          
   if ($con->query($sql) === TRUE) {
     header("Location: ../signin.php?info=accountCreated");
   } else {

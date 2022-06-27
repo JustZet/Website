@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=warp'); 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
     
 /*Html elements--*/
 * {
@@ -8,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
+    scroll-behavior: smooth;
     background: linear-gradient(#1c004d, #5d33cc, #19aabf);
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,9 +62,6 @@ header ul li a {
 }
 .sidepanel a:hover {
     color: #f1f1f1;
-}
-.border-menu {
-    /**/ 
 }
 .closebtn  {
     position: absolute;
@@ -180,6 +179,10 @@ input[type=submit]:hover {
     padding: 2vw;
     background: #190835;
     z-index: 50;
+    text-align: center;
+    font-family: 'amatic';
+    font-weight: bold;
+    font-size: 1rem;
 }
 #content h2 {
     font-size: 3.5em;
@@ -187,6 +190,7 @@ input[type=submit]:hover {
     margin-bottom: 10px
 }
 #content p {
+    
     margin-right: 7vw;
     font-size: 1.2em;
 }

@@ -72,6 +72,7 @@
       <input type="submit" 
             value="Submit" 
             name="submit">
+            
       <a href="signin.php"
          class="signin-bottom">sign in</a> <br>
       </b>

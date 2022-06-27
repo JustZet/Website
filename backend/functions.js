@@ -35,3 +35,4 @@ window.addEventListener("scroll", function() {
   ozn.style.top         = value * -0.4 + 'px';
   ozn.style.left        = value * 0.4 + 'px';
 })
+
